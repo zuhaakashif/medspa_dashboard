@@ -60,16 +60,11 @@ st.markdown("""
 <style>
 /* ── global ── */
 html, body, [class*="css"] { font-family: 'Inter', 'Segoe UI', sans-serif; }
-.block-container { padding-top: 1.4rem; padding-bottom: 2rem; }
-
-section.main > div.block-container {
-    padding-top: 5rem !important;
-    margin-top: 0 !important;
-}
-
-div[data-testid="stAppViewContainer"] > section > div.block-container {
+[data-testid="stAppViewContainer"] .main .block-container {
     padding-top: 6rem !important;
+    padding-bottom: 2rem;
 }
+
 
 /* ── metric cards ── */
 div[data-testid="metric-container"] {
@@ -86,8 +81,12 @@ div[data-testid="metric-container"] [data-testid="stMetricDelta"] { font-size: 0
 /* ── section header ── */
 .sec-header {
     background: linear-gradient(90deg, #262322 0%, #C97D60 100%);
-    color: #fff; padding: 10px 18px; border-radius: 8px;
-    font-size: 1.05rem; font-weight: 700; margin-bottom: 1rem;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
     letter-spacing: .02em;
 }
 
