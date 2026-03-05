@@ -185,7 +185,7 @@ def load_all_data():
 # ─────────────────────────────────────────────────────────────────────────────
 
 def fig_room_heatmap(idle_time):
-    from phase1_data_engine import ROOMS
+    
     pivot = idle_time.pivot(index="room_id", columns="date", values="utilization")
     room_labels = ROOMS.set_index("room_id")["room_name"]
     pivot.index   = [room_labels[r] for r in pivot.index]
@@ -671,7 +671,7 @@ elif section == "💸 Revenue Leakage Analysis":
     from phase1_data_engine import ROOMS
     room_opts = ["All Rooms"] + ROOMS["room_name"].tolist()
     sel_room = st.selectbox("Filter by Room", room_opts)
-    it_display = idle_time.merge(ROOMS[["room_id","room_name"]], on="room_id")
+    it_display = idle_time.copy()
     if sel_room != "All Rooms":
         it_display = it_display[it_display["room_name"] == sel_room]
     it_display = it_display[["date","room_name","booked_min","idle_min","utilization"]].copy()
