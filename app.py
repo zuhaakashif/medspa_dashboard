@@ -60,7 +60,7 @@ st.markdown("""
 <style>
 /* ── global ── */
 html, body, [class*="css"] { font-family: 'Inter', 'Segoe UI', sans-serif; }
-.block-container { padding-top: 1.4rem; padding-bottom: 2rem; }
+.block-container { padding-top: 4rem; padding-bottom: 2rem; }
 
 /* ── metric cards ── */
 div[data-testid="metric-container"] {
@@ -79,7 +79,7 @@ div[data-testid="metric-container"] [data-testid="stMetricDelta"] { font-size: 0
     background: linear-gradient(90deg, #2D6A9F 0%, #3b82b8 100%);
     color: #fff; padding: 10px 18px; border-radius: 8px;
     font-size: 1.05rem; font-weight: 700; margin-bottom: 1rem;
-    letter-spacing: .02em;
+    letter-spacing: .02em; margin-top: 3rem;
 }
 
 /* ── insight box ── */
