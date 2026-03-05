@@ -17,7 +17,7 @@ np.random.seed(RANDOM_SEED)
 # ─────────────────────────────────────────────────────────────────────────────
 # MASTER CONFIGURATION
 # ─────────────────────────────────────────────────────────────────────────────
-START_DATE      = datetime(2024, 3, 1)
+START_DATE      = datetime(2026, 2, 1)
 SIM_DAYS        = 30
 BUSINESS_OPEN   = 9    # 9 AM
 BUSINESS_CLOSE  = 19   # 7 PM
