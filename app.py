@@ -68,7 +68,7 @@ section.main > div.block-container {
 }
 
 div[data-testid="stAppViewContainer"] > section > div.block-container {
-    padding-top: 5rem !important;
+    padding-top: 6rem !important;
 }
 
 /* ── metric cards ── */
