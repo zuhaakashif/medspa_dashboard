@@ -41,10 +41,10 @@ st.set_page_config(
 # PALETTE & PLOT DEFAULTS
 # ─────────────────────────────────────────────────────────────────────────────
 PAL = {
-    "primary": "#A50104", "accent": "#FCBA04", "danger": "#590004",
-    "success": "#FCBA04", "neutral": "#A50104", "bg": "#F3F3F3", "grid": "#E0E0E0",
+    "primary": "#254E70", "accent": "#C33C54", "danger": "#C33C54",
+    "success": "#AEF3E7", "neutral": "#37718E", "bg": "#1E1E2E", "grid": "#2A2A3E",
 }
-ROOM_COLORS = ["#250001", "#590004", "#A50104", "#FCBA04"]
+ROOM_COLORS = ["#254E70", "#37718E", "#8EE3EF", "#C33C54"]
 
 sns.set_theme(style="whitegrid", font_scale=1.0)
 plt.rcParams.update({
@@ -61,26 +61,26 @@ st.markdown("""
 /* ── global ── */
 html, body, [class*="css"] { font-family: 'Inter', 'Segoe UI', sans-serif; }
 [data-testid="stAppViewContainer"] .main .block-container {
-    padding-top: 6rem !important;
+    padding-top: 4rem !important;
     padding-bottom: 2rem;
 }
 
 
 /* ── metric cards ── */
 div[data-testid="metric-container"] {
-    background: #ffffff;
-    border: 1px solid #E2E8F0;
+    background: #252535;
+    border: 1px solid #37718E;
     border-radius: 10px;
     padding: 14px 18px 10px 18px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
-div[data-testid="metric-container"] label { font-size: 0.72rem; color: #64748b; font-weight: 600; letter-spacing: .04em; }
-div[data-testid="metric-container"] [data-testid="stMetricValue"] { font-size: 1.55rem; font-weight: 700; color: #1e293b; }
+div[data-testid="metric-container"] label { font-size: 0.72rem; color: #8EE3EF; font-weight: 600; letter-spacing: .04em; }
+div[data-testid="metric-container"] [data-testid="stMetricValue"] { font-size: 1.55rem; font-weight: 700; color: #F3F3F3; }           
 div[data-testid="metric-container"] [data-testid="stMetricDelta"] { font-size: 0.78rem; }
 
 /* ── section header ── */
 .sec-header {
-    background: linear-gradient(90deg, #250001 0%, #A50104 100%);
+    background: linear-gradient(90deg, #254E70 0%, #C33C54 100%);
     color: #fff;
     padding: 10px 18px;
     border-radius: 8px;
@@ -92,28 +92,28 @@ div[data-testid="metric-container"] [data-testid="stMetricDelta"] { font-size: 0
 
 /* ── insight box ── */
 .insight-box {
-    background: #EFF6FF; border-left: 4px solid #2D6A9F;
+    background: #1A2A3A; border-left: 4px solid #37718E;
     padding: 10px 14px; border-radius: 0 8px 8px 0;
-    font-size: 0.86rem; color: #1e3a5f; margin-bottom: 0.6rem;
+    font-size: 0.86rem; color: #8EE3EF; margin-bottom: 0.6rem;
 }
 .warn-box {
-    background: #FFF7ED; border-left: 4px solid #E8A838;
+    background: #2A1A1E; border-left: 4px solid #C33C54;
     padding: 10px 14px; border-radius: 0 8px 8px 0;
-    font-size: 0.86rem; color: #7c4700; margin-bottom: 0.6rem;
+    font-size: 0.86rem; color: #AEF3E7; margin-bottom: 0.6rem;
 }
 .danger-box {
-    background: #FEF2F2; border-left: 4px solid #D94F3D;
+    background: #2A0A0E; border-left: 4px solid #C33C54;
     padding: 10px 14px; border-radius: 0 8px 8px 0;
-    font-size: 0.86rem; color: #7f1d1d; margin-bottom: 0.6rem;
+    font-size: 0.86rem; color: #F3A0B0; margin-bottom: 0.6rem;
 }
 .success-box {
-    background: #F0FDF4; border-left: 4px solid #3DAD77;
+    background: #0A2A25; border-left: 4px solid #AEF3E7;
     padding: 10px 14px; border-radius: 0 8px 8px 0;
-    font-size: 0.86rem; color: #14532d; margin-bottom: 0.6rem;
+    font-size: 0.86rem; color: #AEF3E7; margin-bottom: 0.6rem;
 }
 
 /* ── sidebar ── */
-[data-testid="stSidebar"] { background: #250001; }
+[data-testid="stSidebar"] { background: #151520; }
 [data-testid="stSidebar"] * { color: #cbd5e1 !important; }
 [data-testid="stSidebar"] .stRadio label { font-size: 0.88rem; }
 
