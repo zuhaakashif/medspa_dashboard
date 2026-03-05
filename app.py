@@ -25,6 +25,7 @@ import streamlit as st
 
 warnings.filterwarnings("ignore")
 sys.path.insert(0, os.path.dirname(__file__))
+from phase1_data_engine import ROOMS, PROVIDERS, SERVICES
 
 # ─────────────────────────────────────────────────────────────────────────────
 # PAGE CONFIG  (must be the very first Streamlit call)
