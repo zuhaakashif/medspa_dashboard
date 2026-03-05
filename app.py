@@ -60,7 +60,16 @@ st.markdown("""
 <style>
 /* ── global ── */
 html, body, [class*="css"] { font-family: 'Inter', 'Segoe UI', sans-serif; }
-.block-container { padding-top: 6rem; padding-bottom: 2rem; }
+.block-container { padding-top: 1.4rem; padding-bottom: 2rem; }
+
+section.main > div.block-container {
+    padding-top: 5rem !important;
+    margin-top: 0 !important;
+}
+
+div[data-testid="stAppViewContainer"] > section > div.block-container {
+    padding-top: 5rem !important;
+}
 
 /* ── metric cards ── */
 div[data-testid="metric-container"] {
