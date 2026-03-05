@@ -32,7 +32,7 @@ from phase1_data_engine import generate_all_data, BUSINESS_OPEN, BUSINESS_CLOSE
 # CONSTANTS
 # ─────────────────────────────────────────────────────────────────────────────
 AVAILABLE_MIN_PER_DAY = (BUSINESS_CLOSE - BUSINESS_OPEN) * 60  # 600 min
-OUTPUT_DIR = "/mnt/user-data/outputs"
+OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "outputs")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Consistent colour palette used across all charts
