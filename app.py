@@ -46,11 +46,21 @@ PAL = {
 }
 ROOM_COLORS = ["#254E70", "#37718E", "#8EE3EF", "#C33C54"]
 
-sns.set_theme(style="whitegrid", font_scale=1.0)
+sns.set_theme(style="darkgrid", font_scale=1.0)
 plt.rcParams.update({
-    "figure.facecolor": PAL["bg"], "axes.facecolor": PAL["bg"],
-    "axes.edgecolor": PAL["grid"], "grid.color": PAL["grid"],
-    "font.family": "DejaVu Sans",
+    "figure.facecolor": "#1E1E2E",
+    "axes.facecolor":   "#252535",
+    "axes.edgecolor":   "#37718E",
+    "grid.color":       "#2A2A3E",
+    "text.color":       "#F3F3F3",
+    "axes.labelcolor":  "#F3F3F3",
+    "xtick.color":      "#8EE3EF",
+    "ytick.color":      "#8EE3EF",
+    "axes.titlecolor":  "#F3F3F3",
+    "legend.facecolor": "#252535",
+    "legend.edgecolor": "#37718E",
+    "legend.labelcolor":"#F3F3F3",
+    "font.family":      "DejaVu Sans",
 })
 
 # ─────────────────────────────────────────────────────────────────────────────
