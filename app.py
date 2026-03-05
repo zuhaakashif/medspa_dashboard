@@ -905,10 +905,10 @@ elif section == "⚙️ Optimization Simulation":
         col_sl, col_res = st.columns([0.38, 0.62])
         with col_sl:
             st.markdown("#### Scenario Parameters")
-            no_show_rate_input   = st.slider("Expected No-Show Rate",     0.05, 0.30, 0.12, 0.01, format="%.2f", ...)
-            overbooking_rate     = st.slider("Overbooking Percentage",    0.00, 0.20, 0.05, 0.01, format="%.2f", ...)
-            demand_growth        = st.slider("Demand Growth Scenario",    0.00, 0.50, 0.10, 0.01, format="%.2f", ...)
-            fill_rate_input      = st.slider("Gap-Fill Success Rate",     0.10, 1.00, 0.70, 0.05, format="%.2f", ...)
+            no_show_rate_input   = st.slider("Expected No-Show Rate",     0.05, 0.30, 0.12, 0.01, format="%.2f", help="Current observed rate is 13.7%")
+            overbooking_rate     = st.slider("Overbooking Percentage",    0.00, 0.20, 0.05, 0.01, format="%.2f", help="Extra slots to schedule above capacity")
+            demand_growth        = st.slider("Demand Growth Scenario",    0.00, 0.50, 0.10, 0.01, format="%.2f", help="Additional demand from marketing / waitlist")
+            fill_rate_input      = st.slider("Gap-Fill Success Rate",     0.10, 1.00, 0.70, 0.05, format="%.2f", help="Fraction of idle gaps filled by last-minute bookings")
 
         with col_res:
             st.markdown("#### Projected Outcomes")
