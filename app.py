@@ -41,10 +41,10 @@ st.set_page_config(
 # PALETTE & PLOT DEFAULTS
 # ─────────────────────────────────────────────────────────────────────────────
 PAL = {
-    "primary": "#2D6A9F", "accent": "#E8A838", "danger": "#D94F3D",
-    "success": "#3DAD77", "neutral": "#8E9BAE", "bg": "#F7F9FC", "grid": "#E2E8F0",
+    "primary": "#63372C", "accent": "#C97D60", "danger": "#C97D60",
+    "success": "#63372C", "neutral": "#FFBCB5", "bg": "#F2E5D7", "grid": "#FFBCB5",
 }
-ROOM_COLORS = ["#2D6A9F", "#3DAD77", "#E8A838", "#D94F3D"]
+ROOM_COLORS = ["#262322", "#63372C", "#C97D60", "#FFBCB5"]
 
 sns.set_theme(style="whitegrid", font_scale=1.0)
 plt.rcParams.update({
@@ -85,7 +85,7 @@ div[data-testid="metric-container"] [data-testid="stMetricDelta"] { font-size: 0
 
 /* ── section header ── */
 .sec-header {
-    background: linear-gradient(90deg, #2D6A9F 0%, #3b82b8 100%);
+    background: linear-gradient(90deg, #262322 0%, #C97D60 100%);
     color: #fff; padding: 10px 18px; border-radius: 8px;
     font-size: 1.05rem; font-weight: 700; margin-bottom: 1rem;
     letter-spacing: .02em;
@@ -114,7 +114,7 @@ div[data-testid="metric-container"] [data-testid="stMetricDelta"] { font-size: 0
 }
 
 /* ── sidebar ── */
-[data-testid="stSidebar"] { background: #1e293b; }
+[data-testid="stSidebar"] { background: #262322; }
 [data-testid="stSidebar"] * { color: #cbd5e1 !important; }
 [data-testid="stSidebar"] .stRadio label { font-size: 0.88rem; }
 
